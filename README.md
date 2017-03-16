@@ -8,7 +8,7 @@ Since this is a drop in replacement for the original Ghost `index.js`, there is 
 
 In your Ghost installation root, issue following command:
 
-`npm i url http https`
+`npm i url http spdy compression`
 
 ### Enable nodejs to open port 80 and 443
 
@@ -26,9 +26,11 @@ Then copy the `ghost-https-index.js` into the folder as `index.js`:
 
 `cp ghost-https-index.js index.js`
 
-Remember to fill in the certification info at the top of the new `index.js`
+Remember to fill in the certification and fqdn:
 
 ```javascript
+const fqdn = '<your domain name>';
+
 // Fill in your certificate files
 const serverKey='';
 const serverCrt='';
@@ -40,7 +42,12 @@ Once everything is ready, start Ghost normally:
 `npm start --production`
 
 ## Changelog
-- 0.1.0 - Initial commit, tested with Ghost 0.11.4 & 0.11.7
+- 0.1.0
+	- Initial commit, tested with Ghost 0.11.4
+- 0.1.1
+	- Due to Ghost 0.11.7 change, directly starting Ghost `parentApp` not longer work correctly. Using [ghost-https-nodejs-proxy](https://github.com/J-Siu/ghost-https-nodejs-proxy) instead.
+	- HTTP2 support using SPDY
+	- FQDN redirect for HTTPS
 
 ## License
 
