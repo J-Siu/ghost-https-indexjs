@@ -4,7 +4,7 @@ V0.1.0 has the advantage of supporting HTTP2/HTTPS for Ghost 0.11.4 without usin
 
 # V0.1.1 Deprecated
 
-Please use [ghost-https-nodejs-proxy](https://github.com/J-Siu/ghost-https-nodejs-proxy/") v0.2.0, which provide a much eaiser one-line merging with Ghost `index.js`, and easier configuration with a standalone config file.
+Please use [ghost-https-nodejs-proxy](https://github.com/J-Siu/ghost-https-nodejs-proxy/) v0.2.0, which provide a much eaiser one-line merging with Ghost `index.js`, and easier configuration with a standalone config file.
 
 ---
 
