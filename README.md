@@ -1,3 +1,13 @@
+# V0.1.0 & Ghost 0.11.4
+
+V0.1.0 has the advantage of supporting HTTP2/HTTPS for Ghost 0.11.4 without using proxy. However this no longer work correctly with Ghost 0.11.7.
+
+# V0.1.1 Deprecated
+
+Please use [ghost-https-nodejs-proxy](https://github.com/J-Siu/ghost-https-nodejs-proxy/") v0.2.0, which provide a much eaiser one-line merging with Ghost `index.js`, and easier configuration with a standalone config file.
+
+---
+
 # Ghost Https Index.js
 
 ## Usage
@@ -48,6 +58,7 @@ Once everything is ready, start Ghost normally:
 	- Due to Ghost 0.11.7 change, directly starting Ghost `parentApp` not longer work correctly. Using [ghost-https-nodejs-proxy](https://github.com/J-Siu/ghost-https-nodejs-proxy) instead.
 	- HTTP2 support using SPDY
 	- FQDN redirect for HTTPS
+- 0.1.1 Deprecation Notice
 
 ## License
 
