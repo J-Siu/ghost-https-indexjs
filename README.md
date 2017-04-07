@@ -1,3 +1,5 @@
+> DISCONTINUED NOTICE: This project is discontinued. Please visit my other project [h2ghost](https://github.com/J-Siu/h2ghost), which can achive the same goal in a much cleaner manner. [h2ghost](https://github.com/J-Siu/h2ghost) is a http2 front end for Ghost Blog, either via proxy or using Ghost's rootApp directly. It can be used as Ghost Blog start up wrapper. All done without modifying any Ghost files.
+
 # V0.1.0 & Ghost 0.11.4
 
 V0.1.0 has the advantage of supporting HTTP2/HTTPS for Ghost 0.11.4 without using proxy. However this no longer work correctly with Ghost 0.11.7.
